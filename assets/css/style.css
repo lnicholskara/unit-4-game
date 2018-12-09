@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+body {
+    background-image: url("../images/qbkls.png");
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #181818;
+    padding: 0;
+}
+
+.container {
+    min-height: 100%;
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2% 5%;
+
+}
+
+.top {
+    text-align: center;
+}
+
+.title {
+    font-size: calc(35px + 35px);
+    padding: 2%;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.instructions {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.crystalPicture {
+    width: 13%;
+    margin: 1%;
+}
+
+@media only screen and (max-width: 992px) {
+    /* For tablets: */
+
+    .crystalPicture {
+        width: 10%;
+        margin: .5%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+
+    p {
+        font-size: calc(12px + 5px);
+    }
+
+    .title {
+        font-size: calc(28px + 8px);
+    }
+
+    .instructions {
+        font-size: 14px;
+    }
+
+
+    .crystalPicture {
+        width: 15%;
+        margin: .5%;
+    }
+
+}

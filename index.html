@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+       <meta charset="utf-8" />
+       <title>Crystal Collector</title>
+       <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+       <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <script src="assets/javascript/game.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700" rel="stylesheet">
+   </head>
+
+<body onload="getItem(), setScore()">
+
+   <header>
+
+       <nav class="top">
+            
+            <p class="title">Crystal Collector</p>
+            
+        </nav>
+
+   </header>
+
+    <div class="container">
+
+        <div class="wrapper">
+
+            <p class="underline">Instructions:</p><br>
+
+            <p class="instructions">
+                Below is a random number. Your goal is to match your score to this number by pressing on the four crystals pictures. <br><br>
+                Each crystal picture will have a random value between 1-12. The challenge is to figure out what number the crystals represent each round. <br><br>
+                To win, press the crystals until your score matches the target number. If your score goes over the target number, you lose the game.<br><br>
+            </p><br>
+
+            <div>
+                <p>Wins:</p><div id="winsDisplay">0</div><br><br>
+                <p>Losses:</p><div id="lossessDisplay">0</div><br><br>
+            </div>
+
+            <div>
+                <p>Target Score:</p><div id="targetScoreDisplay"></div><br><br>
+            </div>
+
+            <div>
+                <p>Your Score:</p><div id="yourScoreDisplay"></div><br><br>
+            </div> 
+                    
+            <img class="crystalPicture" src="assets/images/PinkTearDropCrystal.jpg" alt ="Pink Tear Drop Crystal">
+            <img class="crystalPicture" src="assets/images/PurpleCrystal.jpg" alt ="Purple Crystal">
+            <img class="crystalPicture" src="assets/images/BlueCrystal.jpg" alt ="Blue Crystal">
+            <img class="crystalPicture" src="assets/images/PinkDiamindCrystal.jpg" alt ="Pink Diamond Crystal">
+        
+        </div>
+    
+    </div>
+  
+</body>
+</html>
