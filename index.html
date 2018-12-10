@@ -7,12 +7,12 @@
        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <script src="assets/javascript/game.js"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="assets/javascript/game.js"></script>
        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700" rel="stylesheet">
    </head>
 
-<body onload="getItem(), setScore()">
+<body onload="resetGame(), setScore()">
 
    <header>
 
@@ -38,7 +38,7 @@
 
             <div>
                 <p>Wins:</p><div id="winsDisplay">0</div><br><br>
-                <p>Losses:</p><div id="lossessDisplay">0</div><br><br>
+                <p>Losses:</p><div id="lossesDisplay">0</div><br><br>
             </div>
 
             <div>
@@ -49,10 +49,10 @@
                 <p>Your Score:</p><div id="yourScoreDisplay"></div><br><br>
             </div> 
                     
-            <img class="crystalPicture" src="assets/images/PinkTearDropCrystal.jpg" alt ="Pink Tear Drop Crystal">
-            <img class="crystalPicture" src="assets/images/PurpleCrystal.jpg" alt ="Purple Crystal">
-            <img class="crystalPicture" src="assets/images/BlueCrystal.jpg" alt ="Blue Crystal">
-            <img class="crystalPicture" src="assets/images/PinkDiamindCrystal.jpg" alt ="Pink Diamond Crystal">
+            <img class="crystalPicture" id = "crystal1" src="assets/images/PinkTearDropCrystal.jpg" alt ="Pink Tear Drop Crystal">
+            <img class="crystalPicture" id = "crystal2" src="assets/images/PurpleCrystal.jpg" alt ="Purple Crystal">
+            <img class="crystalPicture" id = "crystal3" src="assets/images/BlueCrystal.jpg" alt ="Blue Crystal">
+            <img class="crystalPicture" id = "crystal4" src="assets/images/PinkDiamindCrystal.jpg" alt ="Pink Diamond Crystal">
         
         </div>
     
